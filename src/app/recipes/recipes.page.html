@@ -1,17 +1,184 @@
 <ion-header>
-  <ion-toolbar color="primary"> <ion-title>Recipes</ion-title> </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-title>Ionic Components</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-item
+ <ion-item
       *ngFor="let recipe of recipes"
       [routerLink]="['/recipes', recipe.id]"
-    >
+    > 
       <ion-avatar slot="start">
         <ion-img [src]="recipe.imageUrl"></ion-img>
       </ion-avatar>
       <ion-label> {{ recipe.title }} </ion-label>
     </ion-item>
+
+<!--
+
+    <ion-item>
+      <ion-toolbar color="Secondary">
+        <ion-title>Ionic Date-picker</ion-title>
+      </ion-toolbar>
+      <ion-label position="floating">MM/DD/YYYY</ion-label>
+      <ion-datetime
+        display-format="MM/DD/YYYY"
+        min="1994-03-14"
+        max="2012-12-09"
+        value="2002-09-23T15:03:46.789"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">MM/DD/YYYY</ion-label>
+      <ion-datetime
+        display-format="MM/DD/YYYY"
+        min="1994-03-14"
+        max="2012-12-09"
+      ></ion-datetime>
+    </ion-item>
   </ion-list>
-</ion-content>
+
+  <ion-toolbar color="Secondry">
+    <ion-title>Ionic Card</ion-title>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-item href="#" class="ion-activated">
+      <ion-icon name="wifi" slot="start"></ion-icon>
+      <ion-label>Card Link Item 1 activated</ion-label>
+    </ion-item>
+
+    <ion-item href="#">
+      <ion-icon name="wine" slot="start"></ion-icon>
+      <ion-label>Card Link Item 2</ion-label>
+    </ion-item>
+
+    <ion-item class="ion-activated">
+      <ion-icon name="warning" slot="start"></ion-icon>
+      <ion-label>Card Button Item 1 activated</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="walk" slot="start"></ion-icon>
+      <ion-label>Card Button Item 2</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <ion-toolbar color="Secondry">
+    <ion-title>Checkboxes</ion-title>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item>
+      
+      <ion-checkbox color="danger" checked="true"></ion-checkbox>
+      <ion-label>I'm checked</ion-label>
+    </ion-item>
+
+    <ion-item>
+       Checked Checkbox 
+      <ion-checkbox color="primary"></ion-checkbox>
+      <ion-label>Check me!</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-toolbar color="Secondry">
+    <ion-title>Chips</ion-title>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-chip>
+        <ion-icon name="pin"></ion-icon>
+        <ion-label>Default</ion-label>
+      </ion-chip>
+    </ion-item>
+
+    <ion-item>
+      <ion-chip>
+        <ion-icon name="heart" color="dark"></ion-icon>
+        <ion-label>Default</ion-label>
+      </ion-chip>
+    </ion-item>
+
+    <ion-item>
+      <ion-chip>
+        <ion-label>Button Chip</ion-label>
+        <ion-icon name="close-circle"></ion-icon>
+      </ion-chip>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-toolbar color="Secondry">
+    <ion-title>Ionic Inputs</ion-title>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Default Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <label>Select date<input type="date" value="2017-06-01"></label>
+    </ion-item>
+
+    <ion-item>
+      <label>Select date<input type="text" placeholder="dd/mm/yy"></label>
+    </ion-item>
+    
+    <ion-item>
+     <input type="submit" value="submit">
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Floating Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="fixed">Fixed Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="stacked">Stacked Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+
+      <ion-input placeholder="Placeholder Input"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input clearInput value="clear me"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input value="Disabled" disabled></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input value="Readonly" readonly></ion-input>
+
+    </ion-item>
+  
+    <ion-item>
+      <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+    </ion-item>
+  -->
+  </ion-list>
+
+  
+
+ </ion-content>

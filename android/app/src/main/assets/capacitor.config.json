@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "ionic-angular-course",
+  "appName": "Demo App",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
